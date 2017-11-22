@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Docker Configuration Template for Noetic backend applications deployment
+=======
+# Docker Configuration Template for Tomcat and Mysql 
+>>>>>>> branch 'master' of https://github.com/sampath-noetic/docker_noetic_backend_template.git
 
 Modify .env file specifying details as per your specific environment.
 
