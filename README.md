@@ -1,4 +1,4 @@
-# Docker Configuration Template for tomcat and mysql 
+# Docker Configuration Template for Tomcat and Mysql 
 
 Modify .env file specifying details as per your specific environment
 TARGET_FOLDER_PATH = maven target folder or any path that contain your WAR file
