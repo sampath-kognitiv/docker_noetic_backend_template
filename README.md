@@ -1,1 +1,9 @@
-# docker_noetic_backend_template
+### to build
+```
+docker-compose build
+```
+
+### to RUN
+```
+docker-compose up
+```
