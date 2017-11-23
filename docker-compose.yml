@@ -4,13 +4,14 @@ noetic_tomcat:
   env_file:
      - ./.env  
   volumes:
-    - "${TARGET_FOLDER}:/usr/local/tomcat/webapps"
+    - "${TARGET_FOLDER}:/usr/local/tomcat/webapps/ROOT"
   links:
     - noetic_mysql:localhost
   ports:
     - 8080:8080
+    - 8787:8787
   environment:
-    - JAVA_OPTS=-Xms128m -Xmx1024m -DdeployProfile=${DEPLOY_PROFILE}     
+    - JAVA_OPTS=-Xms128m -Xmx1024m -XX:MaxPermSize=256m -agentlib:jdwp=transport=dt_socket,address=8787,server=y,suspend=n -DdeployProfile=${DEPLOY_PROFILE}     
 
 noetic_mysql:
   build: ./mysql
