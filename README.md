@@ -25,8 +25,8 @@ docker-compose up
 > - Inital DB dump is included in the ./mysql/tomcat/init_dump.sql
 > - MySql DB is accessible via localhost:3306 user: root with an empty password. 
 > - Following containers would be available when this setup is up and running: <br/>
-	>**noetic_mysql**	 <br/>
-	>**noetic_tomcat**
+	**noetic_mysql**	 <br/>
+	**noetic_tomcat**
 	
 You may connect to a container and do inspections using:
 ```
