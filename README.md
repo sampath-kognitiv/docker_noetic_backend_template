@@ -22,7 +22,7 @@ docker-compose up
 ```
 #### <i class="icon-file"></i> Notes
 > - Remote debugging is enabled via port 8787. You may use that port to connect from your IDE.
-> - Inital DB dump is included in the ./mysql/tomcat/init_dump.sql
+> - Inital DB dump is included in the ./mysql/mysql/init_dump.sql
 > - MySql DB is accessible via localhost:3306 user: root with an empty password. 
 > - Following containers would be available when this setup is up and running: <br/><br/>
 	**noetic_mysql**	 <br/>
