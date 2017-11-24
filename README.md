@@ -3,9 +3,9 @@
 A Tomcat + MySQL Setup for local development of backend projects.
 
 **Before you begin**
-1 . Make sure you have installed docker and docker-compose for your OS.
-2 . Clone this repository and go to your working directory.
-3 . Modify .env file specifying details as per your specific development/OS environment.
+1. Make sure you have installed docker and docker-compose for your OS.
+2. Clone this repository and go to your working directory.
+3. Modify .env file specifying details as per your specific development/OS environment.
 
 > **LOCAL_WAR_DIR_PATH** = maven target folder or any path that contain your WAR. Note that this is an host OS specific path.
 
