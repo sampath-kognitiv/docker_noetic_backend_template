@@ -4,7 +4,7 @@ noetic_tomcat:
   env_file:
      - ./.env  
   volumes:
-    - "${TARGET_FOLDER}:/usr/local/tomcat/webapps/ROOT"
+    - "${LOCAL_WAR_DIR_PATH}:${TARGET_DOCKER_TOMCAT_WAR_PATH}"
   links:
     - noetic_mysql:localhost
   ports:
