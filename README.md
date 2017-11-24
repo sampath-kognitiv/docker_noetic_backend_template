@@ -37,5 +37,5 @@ You may connect to a container and do inspections using:
 For Hospitality API, **TARGET_DOCKER_TOMCAT_WAR_PATH** should be the following so that it resolves imperial-api to root context :
 	```/usr/local/tomcat/webapps/ROOT```
 	
-For other APIs you may just specify webapps directory:
+For other APIs you may just specify webapps directory:<br/>
     ``` /usr/local/tomcat/webapps ```
