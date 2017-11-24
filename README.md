@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## Docker env setup template for Noetic backend applications deployment
 
 A Tomcat + MySQL Setup for local development of backend projects.
@@ -8,18 +9,33 @@ A Tomcat + MySQL Setup for local development of backend projects.
 3 . Modify .env file specifying details as per your specific development/OS environment.
 
 > **LOCAL_WAR_DIR_PATH** = maven target folder or any path that contain your WAR. Note that this is an host OS specific path.
+=======
+## Docker configuration template for Noetic backend applications deployment
+>>>>>>> branch 'master' of https://github.com/sampath-noetic/docker_noetic_backend_template.git
 
 
 
+<<<<<<< HEAD
 ##### to Build
+=======
+**LOCAL_WAR_DIR_PATH** = maven target folder or any path that contain your WAR. Note that this is an host OS specific path.
+
+#### to Build
+>>>>>>> branch 'master' of https://github.com/sampath-noetic/docker_noetic_backend_template.git
 ```
 docker-compose build
 ```
 
+<<<<<<< HEAD
 ##### to Run
 ```s
+=======
+#### to Run
+```
+>>>>>>> branch 'master' of https://github.com/sampath-noetic/docker_noetic_backend_template.git
 docker-compose up
 ```
+<<<<<<< HEAD
 #### <i class="icon-file"></i> Notes
 > - Remote debugging is enabled via port 8787. You may use that port to connect from your IDE.
 > - Inital DB dump is included in the ./mysql/tomcat/init_dump.sql
@@ -39,3 +55,18 @@ For Hospitality API, **TARGET_DOCKER_TOMCAT_WAR_PATH** should be the following s
 	
 For other APIs you may just specify webapps directory:
     ``` /usr/local/tomcat/webapps ```
+=======
+#### <i class="icon-file"></i> Note
+> - Remote debugging is enabled via port 8787. You may use that port to connect from your IDE.
+> - Inital DB dump is included in the ./mysql/tomcat/init_dump.sql
+
+
+
+
+ **Tip:** 
+For Hospitality API, **TARGET_DOCKER_TOMCAT_WAR_PATH** should be the following so that it resolves imperial-api to root context :
+	```/usr/local/tomcat/webapps/ROOT```
+	
+For other APIs you may just specify webapps directory
+    ```/usr/local/tomcat/webapps```
+>>>>>>> branch 'master' of https://github.com/sampath-noetic/docker_noetic_backend_template.git
