@@ -6,8 +6,8 @@ service mysql start
 
 mysql --version
 
-mysql -uroot -e "create database imperial"
-mysql -uroot  imperial < /mysql/init_dump.sql
+mysql -uroot  -e "create database imperial"
+mysql -uroot   imperial < /mysql/init_dump.sql
 
 #mysql -uroot -e "select * from imperial.schema_version"
 
