@@ -22,7 +22,7 @@ docker-compose up
 ```
 #### <i class="icon-file"></i> Notes
 > - Remote debugging is enabled via port 8787. You may use that port to connect from your IDE. <br/><br/>
-> - Inital DB dump is included in the ./mysql/init_dump.sql <br/><br/>
+> - Inital DB dump is included in the ./mysql/1-init_backend_db_dump.sql <br/><br/>
 > - MySql DB is accessible via localhost:3306 user: root with an empty password.  <br/><br/>
 > - If you get MySql connection issues, check your /etc/hosts file for localhost. If there is an entry to resolve localhost to 127.0.0.1 this configuration throws an error since the usage of localhost in the JDBC connection URL in the application (localhost in docker resolves to mysql image name or an ip something like 172.17.0.2). To resolve this issue permanently it would require a change in application to use a differnt alias other than localhost which needs to be considered after all the developers moved to docker environment. <br/><br/>
 > - Following containers would be available when this setup is up and running: <br/><br/>
